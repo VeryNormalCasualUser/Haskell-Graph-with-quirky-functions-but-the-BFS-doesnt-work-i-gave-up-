@@ -1,0 +1,9 @@
+["abbcc","caabb","bacab","cbbcb","cbcba","baccc","ccaba","cbcca","aaacb","bccba"]
+
+___
+
+[("cbcba",["abbcc","cbbcb","cbcba","ccaba","cbcca","bccba"]),("bacab",["caabb","bacab","cbbcb","cbcba","ccaba","aaacb"]),("abbcc",["abbcc","cbcba","baccc","cbcca","bccba"]),("caabb",["caabb","bacab","cbbcb","cbcba","ccaba","aaacb"]),("cbbcb",["abbcc","cbbcb"]),("baccc",["baccc","cbcca","bccba"]),
+("ccaba",["caabb","bacab","ccaba","cbcca","aaacb","bccba"])
+,("cbcca",["baccc","ccaba","cbcca","bccba"]),("aaacb",["bacab","baccc","ccaba","cbcca","aaacb"]),("bccba",["abbcc","cbbcb","cbcba","ccaba","cbcca","bccba"])]
+
+("ccaba",["caabb","bacab","ccaba","cbcca","aaacb","bccba"])

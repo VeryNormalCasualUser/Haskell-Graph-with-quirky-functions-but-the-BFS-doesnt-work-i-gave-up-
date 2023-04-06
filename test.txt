@@ -1,0 +1,33 @@
+toStrTuple = map (\x -> (show (fst x), show (snd x)))
+numbers1 = zip [1..] [2..]
+numbers2 = zip [1..] [2, 5..]
+numbersStr = toStrTuple ((take 10 numbers1) ++ (take 10 numbers2))
+graph = DG.createGraph numbersStr
+DG.bfs graph "1" "12"
+DG.bfs graph "1" "13"
+DG.bfs graph "1" "12"
+DG.bfs graph "1" "17"
+
+___
+
+["rebkx","lalgu","tftzx","gteok","umjhr","uolcp","krlwe","zfcpz","dukgy","zfkvu"]
+
+["umjhr dukgy","gteok uolcp","krlwe tftzx","lalgu umjhr","zfcpz rebkx","dukgy dukgy","tftzx rebkx","zfcpz lalgu","krlwe umjhr","dukgy krlwe"]
+
+__________________________________________________________
+
+map (\x -> map ord x) ["rebkx","lalgu","tftzx","gteok","umjhr","uolcp","krlwe","zfcpz","dukgy","zfkvu"]
+numListList = map (\x -> map ord x) ["rebkx","lalgu","tftzx","gteok","umjhr","uolcp","krlwe","zfcpz","dukgy","zfkvu"]
+numList1 = map (foldr (*) 1) numListList
+numListStr = map (take 5 . show) numList1
+edges = PI.createEdges $ PI.subsetTuple numListStr
+DG.bfs graph "14488" "14488"                                                                           
+DG.bfs graph "14488" "13634 
+
+__________________________________________________________
+["pzazz","jazzy","duzyz","fuzzy","huzzy"]
+
+___
+[("28",["29","83"]),("24",["25","71"]),("20",["21","59"]),("16",["17","47"]),("12",["13","35"]),("8",["9","23"]),("4",["5","11"]),("6",["7","17"]),("10",["11","29"]),("14",["15","41"]),("18",["19","53"]),("22",["23","65"]),("26",["27","77"]),("30",["31","89"]),("2",["3","5"]),("0",["0"]),("1",["2"]),("29",["30","86"]),("25",["26","74"]),("21",["22","62"]),("17",["18","50"]),("13",["14","38"]),("9",["10","26"]),("5",["6","14"]),("3",["4","8"]),("7",["8","20"]),("11",["12","32"]),("15",["16","44"]),("19",["20","56"]),("23",["24","68"]),("27",["28","80"])]
+___
+[("8",["9","23"]),("4",["5","11"]),("6",["7","17"]),("10",["11","29"]),("2",["3","5"]),("1",["2"]),("9",["10","26"]),("5",["6","14"]),("3",["4","8"]),("7",["8","20"])]
